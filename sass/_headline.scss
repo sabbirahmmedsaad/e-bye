@@ -1,0 +1,36 @@
+@import '_variable.scss';
+@import '_font.scss';
+@import '_mixin.scss';
+
+.headline{
+    padding-bottom: 57px;
+
+    h3{
+        @include ralemed;
+        font-size: 40px;
+        color: $dark;
+        position: relative;
+
+        &::before{
+            content: '';
+            width: 168px;
+            height: 2px;
+            background: $brand;
+            position: absolute;
+            left: 43%;
+            @include transf;
+            bottom: -18px;
+        }
+
+        &::after{
+            content: '';
+            width: 92px;
+            height: 2px;
+            background: $brand;
+            position: absolute;
+            left: 40%;
+            @include transf;
+            bottom: -24px;
+        }
+    }
+}

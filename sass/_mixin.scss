@@ -1,0 +1,39 @@
+@mixin trans($time){
+    transition: all linear $time;
+    -webkit-transition: all linear $time;
+    -moz-transition: all linear $time;
+    -ms-transition: all linear $time;
+    -o-transition: all linear $time;
+}
+
+@mixin transf(){
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+@mixin transfr(){
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+
+@mixin transc(){
+    transform: scale(.87);
+    -webkit-transform: scale(.87);
+    -moz-transform: scale(.87);
+    -ms-transform: scale(.87);
+    -o-transform: scale(.87);
+}
+
+@mixin transr(){
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}

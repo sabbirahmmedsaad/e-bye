@@ -1,0 +1,23 @@
+@import '_variable.scss';
+
+//opensans font;
+@mixin openreg (){
+    font-family: $ff2;
+    font-weight: 400;
+}
+
+//raleway fonts;
+@mixin ralereg (){
+    font-family: $ff1;
+    font-weight: 400;
+}
+
+@mixin ralemed (){
+    font-family: $ff1;
+    font-weight: 500;
+}
+
+@mixin ralebold (){
+    font-family: $ff1;
+    font-weight: 700;
+}

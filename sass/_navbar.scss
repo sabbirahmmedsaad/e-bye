@@ -1,0 +1,102 @@
+@import '_variable.scss';
+@import '_font.scss';
+@import '_mixin.scss';
+
+.navbar{
+
+    .navbar-brand{
+
+    }
+    
+    .navbar-nav{
+
+        .nav-item{
+
+            .nav-link{
+                @include ralemed;
+                font-size: 16px;
+                line-height: 110px;
+                color: $dark;
+                padding: 0 10px !important;
+                display: inline-block;
+                position: relative;
+                @include trans(0.4s);
+
+                &::before{
+                    content: '';
+                    width: 0px;
+                    height: 1px;
+                    position: absolute;
+                    background: $brand;
+                    left: 10px;
+                    bottom: 40px;
+                    @include trans(0.4s);
+                }
+
+                &::after{
+                    content: '';
+                    width: 0px;
+                    height: 1px;
+                    position: absolute;
+                    background: $brand;
+                    left: 10px;
+                    bottom: 37px;
+                    @include trans(0.4s);
+                }
+
+                &:hover{
+                    color: $brand;
+
+                    &::before{
+                        width: 23px;
+                    }
+
+                    &::after{
+                        width: 11px;
+                    }
+                }                
+
+            }
+
+            .active{
+                color: $brand;
+
+                &::before{
+                    width: 23px;
+                }
+
+                &::after{
+                    width: 11px;
+                }
+            }
+            
+        }
+    }
+
+    form{
+
+        button{
+
+            i{
+                font-size: 16px;
+                color: $hbg;
+            }
+        }
+    }
+
+    .cart-info{
+    
+        a{
+            color: $brand;
+            @include ralemed;
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+/* =======================
+    navbar css ends
+====================== */ 
+

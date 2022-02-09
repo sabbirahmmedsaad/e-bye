@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page of ebuy</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- google font css -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- slider css -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- ===============================================================================================
+        page top part starts 
+    =============================================================================================== -->
+    
+
+    <!-- header starts -->
+    <header>
+        <div class="container">
+           <div class="row">
+               
+               <div class="col-lg-4">
+                   <div class="header-left">
+                       <ul class="ps-0 mb-0 d-lg-flex">
+                           <li class="nav-item dropdown">
+                               <a class="nav-link dropdown-toggle text-capitalize p-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                   eng
+                           </a>
+                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           <li><hr class="dropdown-divider"></li>
+                           <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-uppercase p-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           usd<span>&dollar;</span>
+                        </a>
+                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           <li><hr class="dropdown-divider"></li>
+                           <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-capitalize p-0">toll free: +12345678900</a>
+                        </li>                            
+                    </ul>                    
+                </div>
+              </div>
+              
+              <div class="col-lg-4 ms-lg-auto">
+                <div class="header-right">
+                    <ul class="ps-0 mb-0 d-lg-flex justify-content-end">                           
+                        <li><a class="nav-link text-capitalize p-0" href="#"><i class="fas fa-heart"></i>wishlist</a></li>                        
+                        <li><a class="nav-link text-capitalize p-0" href="#"><i class="fas fa-user"></i>my account</a></li>                        
+                        <li><a class="nav-link text-capitalize p-0" href="#">login <span>/</span> register</a></li>                                                          
+                    </ul> 
+                </div>
+            </div>
+            
+           </div>
+        </div>
+    </header>
+    <!-- header starts -->
+    
+
+    <!-- navbar starts -->
+    <nav class="navbar navbar-expand-lg navbar-light py-0">
+        <div class="container">
+          <a class="navbar-brand py-0" href="index.html">
+              <img src="images/logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-capitalize p-0" aria-current="page" href="index.html">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize p-0" href="men.html">men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize p-0" href="#">women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize p-0" href="#">accesorries</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize p-0" href="#">blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize p-0" href="contact.html">contact</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control d-none" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn" type="submit">
+                  <i class="fas fa-search"></i>
+              </button>
+            </form>
+            <div class="cart-info">
+                <a class="btn text-capitalize" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-shopping-bag"></i> <span>2</span> items</a>
+            </div>
+          </div>  
+        </div>
+      </nav>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                ...
+            </div>
+        </div>      
+    <!-- navbar ends -->
+    
+    <!-- ===============================================================================================
+        page top part ends 
+    =============================================================================================== -->
+    
+    <!-- banner start -->   
+    <section id="banner">
+      <div class="banner-slider">
+        <div class="banner-item person-1">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="banner-text">
+                  <h3 class="mb-0">2017</h3>
+                  <h4 class="mb-0 text-uppercase">trendy design</h4>
+                  <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting stry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                  <a class="cta-btn btn text-uppercase" href="#">view more</a>
+                  <a class="cta-btn btn text-uppercase" href="#">purchase</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner-item person-2">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 text-lg-end ms-lg-auto">
+                <div class="banner-text">
+                  <h3 class="mb-0">2017</h3>
+                  <h4 class="mb-0 text-uppercase">trendy design</h4>
+                  <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting stry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                  <a class="cta-btn btn text-uppercase" href="#">view more</a>
+                  <a class="cta-btn btn text-uppercase" href="#">purchase</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="banner-item person-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 m-lg-auto">
+                <div class="banner-text text-center">
+                  <h3 class="mb-0">2017</h3>
+                  <h4 class="mb-0 text-uppercase">trendy design</h4>
+                  <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting stry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                  <a class="cta-btn btn text-uppercase" href="#">view more</a>
+                  <a class="cta-btn btn text-uppercase" href="#">purchase</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+
+    <!-- support start -->
+    <section id="support">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="support-item">
+              <h3 class="mb-0 d-flex justify-content-center"><span class="d-block"><i class="fas fa-truck"></i></span>Free Shipping</h3>
+              <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="support-item">
+              <h3 class="mb-0 d-flex justify-content-center"><span class="d-block"><i class="fa fa-life-ring" aria-hidden="true"></i>
+              </span>24/7 Support</h3>
+              <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="support-item">
+              <h3 class="mb-0 d-flex justify-content-center"><span class="d-block"><i class="fa fa-money" aria-hidden="true"></i>
+              </span>Cashback</h3>
+              <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- support end -->
+
+    
+    <!-- team start -->
+    <section id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="team-item">
+              <div class="card rounded-o">
+                <img src="images/team-person1.jpg" class="card-img-top img-fluid w-100" alt="team-person1">
+                <div class="card-body text-center p-0">
+                  <h3 class="mb-0 text-capitalize">new</h3>
+                  <h4 class="mb-0 text-capitalize">jeans shirt</h4>
+                  <a href="#" class="btn cta-btn text-capitalize">shop now</a>
+                </div>
+              </div>
+              <div class="new-part">
+                <h4 class="mb-0 text-uppercase">new</h4>
+              </div>
+            </div>          
+          </div>
+
+          <div class="col-lg-4">
+            <div class="team-item">
+              <div class="card rounded-o">
+                <img src="images/team-person2.jpg" class="card-img-top img-fluid w-100" alt="team-person2">
+                <div class="card-body text-center p-0">
+                  <h3 class="mb-0 text-capitalize">2017</h3>
+                  <h4 class="mb-0 text-capitalize">womens's glass</h4>
+                  <a href="#" class="btn cta-btn text-capitalize">shop now</a>
+                </div>
+              </div>
+              <div class="new-part">
+                <h4 class="mb-0 text-uppercase">new</h4>
+              </div>
+            </div>          
+          </div>
+
+          <div class="col-lg-4">
+            <div class="team-item">
+              <div class="card rounded-o">
+                <img src="images/team-person3.jpg" class="card-img-top img-fluid w-100" alt="team-person3">
+                <div class="card-body text-center p-0">
+                  <h3 class="mb-0 text-capitalize">best</h3>
+                  <h4 class="mb-0 text-capitalize">mens shirt</h4>
+                  <a href="#" class="btn cta-btn text-capitalize">shop now</a>
+                </div>
+              </div>
+              <div class="new-part">
+                <h4 class="mb-0 text-uppercase">new</h4>
+              </div>
+            </div>          
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- team end -->
+
+
+    <!-- featured products start -->
+    <section id="featured">
+      <div class="headline text-center">
+        <h3 class="mb-0 text-capitalize">featured products</h3>
+      </div>
+      
+        <div class="featured-menu">
+          <ul class="mb-0 ps-0 d-lg-flex justify-content-center">
+            <li class="text-capitalize" data-filter="all">all</li>
+            <li class="text-capitalize" data-filter=".men">men</li>
+            <li class="text-capitalize active" data-filter=".women">womens</li>
+            <li class="text-capitalize" data-filter=".children">children</li>
+            <li class="text-capitalize" data-filter=".accesorries">accesorries</li>
+          </ul>
+        </div>
+              
+      <div class="container">
+        <div class="row filter">
+          <div class="col-lg-3 mix men">
+            <div class="featured-item">
+              <div class="featured-item-image">
+                <img src="images/featured-person1.jpg" alt="featured-person1" class="w-100 img-fluid">
+                <div class="featured-item-overlay">
+                  <ul class="mb-0 ps-0">
+                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <h3 class="mb-0 text-capitalize position-relative">woolen t-shirt<span class="position-absolute top-0 end-0">&dollar; 99.00</span></h3>
+              <div class="featured-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>            
+          </div>
+
+          <div class="col-lg-3 mix women">
+            <div class="featured-item ">
+              <div class="featured-item-image">
+                <img src="images/featured-person2.jpg" alt="featured-person2" class="w-100 img-fluid">
+                <div class="featured-item-overlay">
+                  <ul class="mb-0 ps-0">
+                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <h3 class="mb-0 text-capitalize position-relative">silk skirt<span class="position-absolute top-0 end-0">&dollar; 99.00</span></h3>
+              <div class="featured-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>            
+          </div>
+
+          <div class="col-lg-3 mix children">
+            <div class="featured-item ">
+              <div class="featured-item-image">
+                <img src="images/featured-person3.jpg" alt="featured-person3" class="w-100 img-fluid">
+                <div class="featured-item-overlay">
+                  <ul class="mb-0 ps-0">
+                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random" aria-hidden="true"></a></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></a></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <h3 class="mb-0 text-capitalize position-relative">woolen t-shirt ash<span class="position-absolute top-0 end-0">&dollar; 99.00</span></h3>
+              <div class="featured-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>            
+          </div>
+
+          <div class="col-lg-3 mix accesorries">
+            <div class="featured-item ">
+              <div class="featured-item-image">
+                <img src="images/featured-person4.jpg" alt="featured-person4" class="w-100 img-fluid">
+                <div class="featured-item-overlay">
+                  <ul class="mb-0 ps-0">
+                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <h3 class="mb-0 text-capitalize position-relative">t-shirt for women<span class="position-absolute top-0 end-0">&dollar; 99.00</span></h3>
+              <div class="featured-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- featured products end -->
+
+
+    <!-- new product start -->
+    <section id="new-product">      
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6">
+               <div class="n-product-img">
+                  <img src="images/new-product.jpg" alt="new-product" class="img-fluid w-100">
+                </div>
+            </div>
+            <div class="col-lg-6">
+               <div class="n-product-text">
+                  <h2 class="mb-0 text-uppercase">new product</h2>
+                  <h1 class="mb-0 text-uppercase">Microsoft Surface Pro</h1>
+                  <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loremsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It hasived not only five centuries, with the release of Letraset sheets.</p>
+                  <h3 class="mb-0 text-uppercase">launch in</h3>
+               </div>
+               <div class="countdown">
+               </div>
+            </div>
+         </div>
+      </div>
+    </section>
+    <!-- new product end -->
+
+
+    <!-- latest products start -->
+    <section id="latest-product">
+      <div class="headline text-center">
+        <h3 class="mb-0 text-capitalize">latest products</h3>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="latest-slider">
+
+              <div class="latest-item">
+                <div class="latest-item-image">
+                  <img src="images/latest-product1.jpg" alt="latest-product1" class="w-100 img-fluid">
+                  <div class="latest-item-overlay">
+                    <ul class="mb-0 ps-0">
+                      <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                      <li><a href="#"><i class="fa fa-random" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="mb-0 text-capitalize position-relative">woolen t-shirt<span class="position-absolute top-0 end-0">&dollar; 99.00</span></h3>
+                <div class="latest-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>            
+              </div>
+  
+              <div class="latest-item">
+                <div class="latest-item-image">
+                  <img src="images/latest-product2.jpg" alt="latest-product2" class="w-100 img-fluid">
+                  <div class="latest-item-overlay">
+                    <ul class="mb-0 ps-0">
+                      <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                      <li><a href="#"><i class="fa fa-random" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="mb-0 text-capitalize position-relative">woolen t-shirt<span class="position-absolute top-0 end-0">&dollar; 99.00</span></h3>
+                <div class="latest-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>            
+              </div>
+  
+              <div class="latest-item">
+                <div class="latest-item-image">
+                  <img src="images/latest-product3.jpg" alt="latest-product3" class="w-100 img-fluid">
+                  <div class="latest-item-overlay">
+                    <ul class="mb-0 ps-0">
+                      <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                      <li><a href="#"><i class="fa fa-random" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="mb-0 text-capitalize position-relative">woolen t-shirt<span class="position-absolute top-0 end-0">&dollar; 99.00</span></h3>
+                <div class="latest-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>            
+              </div>
+  
+              <div class="latest-item">
+                <div class="latest-item-image">
+                  <img src="images/latest-product4.jpg" alt="latest-product4" class="w-100 img-fluid">
+                  <div class="latest-item-overlay">
+                    <ul class="mb-0 ps-0">
+                      <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                      <li><a href="#"><i class="fa fa-random" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="mb-0 text-capitalize position-relative">woolen t-shirt<span class="position-absolute top-0 end-0">&dollar; 99.00</span></h3>
+                <div class="latest-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>            
+              </div>
+  
+              <div class="latest-item">
+                <div class="latest-item-image">
+                  <img src="images/latest-product1.jpg" alt="latest-product1" class="w-100 img-fluid">
+                  <div class="latest-item-overlay">
+                    <ul class="mb-0 ps-0">
+                      <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                      <li><a href="#"><i class="fa fa-random" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="mb-0 text-capitalize position-relative">woolen t-shirt<span class="position-absolute top-0 end-0">&dollar; 99.00</span></h3>
+                <div class="latest-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>            
+              </div>
+  
+          </div>
+         </div>
+        </div>
+      </div>
+    </section>
+    <!-- latest products end -->
+
+
+    <!-- testimonial start -->
+    <section id="testimonial">
+      <div class="headline text-center">
+        <h3 class="mb-0 text-capitalize">testimonial</h3>
+      </div>
+
+      <div class="testimonial-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <div class="testimonial-slider">
+                <div class="testimonial-item">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <div class="testimonial-img">
+                        <img src="images/testmonial-person1.png" alt="testmonial-person1" class="w-100 img-fluid">
+                      </div>
+                    </div>
+                    <div class="col-lg-9">
+                      <div class="testimonial-details">
+                        <h3 class="mb-0">ASH Shakir</h3>
+                        <h4 class="mb-0">Sketch Artist</h4>
+                        <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and stry. Lorem sum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a ive centuries, but also the leap into electronic.</p>
+                        <h5 class="mb-0 text-end">Ash Shakir</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testimonial-item">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <div class="testimonial-img">
+                        <img src="images/testmonial-person2.png" alt="testmonial-person2" class="w-100 img-fluid">
+                      </div>
+                    </div>
+                    <div class="col-lg-9">
+                      <div class="testimonial-details">
+                        <h3 class="mb-0">Aminul Islam</h3>
+                        <h4 class="mb-0">Software Developer</h4>
+                        <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and stry. Lorem sum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a ive centuries, but also the leap into electronic.</p>
+                        <h5 class="mb-0 text-end">Aminul</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testimonial-item">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <div class="testimonial-img">
+                        <img src="images/testmonial-person1.png" alt="testmonial-person1" class="w-100 img-fluid">
+                      </div>
+                    </div>
+                    <div class="col-lg-9">
+                      <div class="testimonial-details">
+                        <h3 class="mb-0">ASH Shakir</h3>
+                        <h4 class="mb-0">Sketch Artist</h4>
+                        <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and stry. Lorem sum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a ive centuries, but also the leap into electronic.</p>
+                        <h5 class="mb-0 text-end">Ash Shakir</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial end -->
+
+    
+    <!-- ===============================================================================================
+        page bottom part starts 
+    =============================================================================================== -->
+    
+    
+    <!-- ===============================================================================================
+        page bottom part ends 
+    =============================================================================================== -->
+
+    
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/countdown.jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

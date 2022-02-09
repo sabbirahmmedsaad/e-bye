@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+/* ====================
+    common css ends
+==================== */ 
+
+@import '_header.scss';
+@import '_navbar.scss';
+@import '_banner.scss';
+@import '_support.scss';
+@import '_team.scss';
+@import '_featured.scss';
+@import '_newproduct.scss';
+@import '_latestproduct.scss';
+@import '_testimonial.scss';
+
