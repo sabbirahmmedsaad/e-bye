@@ -1,0 +1,138 @@
+@import 'variable';
+@import 'font';
+@import 'mixin';
+
+
+#ourblog{
+    padding-bottom: 100px;
+
+    .headline{
+
+        h3{
+
+            &::before{
+                left: 47%;
+                width: 90px;
+            }
+
+            &::after{
+                left: 46%;
+                width: 65px;;
+            }
+        }
+    }
+
+    .ourblog-item{
+        overflow: hidden;
+        margin-top: 27px;
+
+        .blog-person{
+
+            .blog-person-overlay{
+                width: 100%;
+                height: 100%;
+                top: -100%;
+                left: 0;
+                background: $over70;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                visibility: hidden;
+                @include trans(0.4s);
+                opacity: 0;
+
+                .calender{
+                    padding-top: 5px;
+                   
+                    p{
+                        @include openreg;
+                        font-size: 14px;
+                        color: $light;   
+                    }
+                }
+
+                .icon{
+
+                    i{
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        font-size: 18px;
+                        color: $white;
+                        border: 1px solid $white;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        cursor: pointer;
+                    }
+                }
+
+                .comments{
+                    display: flex;
+                    justify-content: space-around;
+                    padding-bottom: 5px;
+
+                    p{
+                        font-size: 14px;
+                        color: $light;
+
+                        i{
+                            margin-right: 5px;
+                        }
+                       
+                    }
+                }
+               
+            }
+
+        }
+
+        h3{
+            @include ralemed;
+            font-size: 20px;
+            color: $dark;
+            padding-top: 25px;
+            padding-bottom: 25px
+        }
+
+        p{
+            @include openreg;
+            font-size: 14px;
+            color: $hbg;
+        }
+
+        a{
+            @include ralemed;
+            font-size: 16px;
+            color: $dark;
+            padding-top: 18px;
+            display: block;
+            @include trans(0.4s);
+
+            span{
+                margin-left: 10px;
+            }
+        }
+
+        &:hover{
+
+            .blog-person-overlay{
+                visibility: visible;
+                opacity: 1;
+                top: 0%;
+            }
+
+            a{
+                color: $brand;
+            }
+        }
+        
+    }
+}
+
+/* =====================
+    our blog css end
+===================== */ 
