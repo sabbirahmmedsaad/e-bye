@@ -1,3 +1,6 @@
+@import '_variable.scss';
+@import '_font.scss';
+
 @mixin trans($time){
     transition: all linear $time;
     -webkit-transition: all linear $time;
@@ -36,4 +39,24 @@
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
+}
+
+@mixin hover(){
+    background: $brand;
+    color: $white;
+}
+
+@mixin openregl(){
+    @include openreg;
+    font-size: 14px;
+    color: $light;
+}
+
+@mixin overlaybg{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
 }

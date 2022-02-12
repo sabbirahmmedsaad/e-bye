@@ -1,0 +1,187 @@
+@import 'variable';
+@import 'font';
+@import 'mixin';
+
+footer{
+
+    .footer-main{
+        background: $ftbg;
+        padding-bottom: 60px;
+
+            h5{
+                @include ralemed;
+                font-size: 16px;
+                color: $white;
+                padding-top: 80px;
+            }
+
+        .footer-logo{
+            
+            img{
+                padding-top: 60px;
+                padding-bottom: 25px
+            }
+            
+            ul{
+
+                li{
+                    @include openregl;
+                    line-height: 24px;
+
+                    &:first-child{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+        .footer-contact{
+
+            ul{
+                margin-top: 34px;
+
+                li{
+                    margin-bottom: 25px;
+
+                    span{
+                        display: inline-block;
+                        width: 25px;
+
+                        i{
+                            color: $light;
+                        }
+                    }
+
+                    a{
+                       @include openregl;
+                    }
+
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .imp-links{
+
+            ul{
+                margin-top: 34px;
+
+                li{
+                    margin-bottom: 15px;
+
+                    a{
+                        @include openreg;
+                        font-size: 14px;
+                        color: $light;
+                        @include trans(0.4s);
+
+                        &:hover{
+                            color: $brand;
+                            padding-left: 5px;
+                        }
+                    }
+
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .footer-newsletter{
+
+            h5{
+
+                &:last-of-type{
+                    margin-top: -45px;
+                }
+            }
+
+            form{
+                margin-top: 30px;
+
+                input{
+                    @include openlight;
+                    font-size: 14px;
+                    font-style: italic;
+                    border-right: none;
+                    
+                    &::placeholder{
+                        color: $light;
+                    }
+                }
+
+                button{
+                    background: $brand;
+                }
+            }
+
+            .social-icon{
+                margin-top: 30px;
+
+                a{
+                    margin-right: 24px;
+
+                    i{
+                        font-size: 20px;
+                        color: $dark;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        background: $white;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        @include trans(0.4s);
+                    }
+
+                    &:last-of-type{
+                        margin-right: 0;
+                    }
+
+                    &:hover{
+
+                        i{
+                            @include hover;
+                        }
+                    }
+
+                }
+
+            }
+        }
+        
+    }
+
+    .footer-copy{
+        background: $fcbg;
+        .copytext{
+            p{
+                @include openreg;
+                font-size: 14px;
+                line-height: 50px;
+                color: $white;
+                a{
+                    @include ralemed;
+                    font-size: 14px;
+                    color: $brand;
+                }
+            }
+        }
+        .payment-method{
+            img{
+                padding-top: 10px;
+            }
+        }
+    }
+
+}
+
+/* ======================
+    footer scss end
+==================== */ 

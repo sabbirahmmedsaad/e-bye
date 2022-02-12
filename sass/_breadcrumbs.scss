@@ -1,0 +1,45 @@
+@import '_variable.scss';
+@import '_font.scss';
+@import '_mixin.scss';
+
+#breadcrumbs{
+    background: url(../images/breadcrumb.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    padding: 75px 0;
+
+    &::after{
+       @include overlaybg;
+       background: $over70
+    }
+
+    .breadcrumbs-text{
+        h4{
+            @include ralemed;
+            font-size: 24px;
+            color: $white;
+        }
+
+        a{
+            @include ralereg;
+            font-size: 18px;
+            color: $white;
+        }
+
+        i{
+            font-size: 18px;
+            color: $white;
+            margin: 0 3px;
+        }
+
+        .current-page{
+            color: $brand;
+        }
+
+    }
+
+}
+
+/* ==========================
+    breadcrumbs css ends
+======================== */ 

@@ -6,6 +6,12 @@
     font-weight: 400;
 }
 
+@mixin openlight (){
+    font-family: $ff2;
+    font-weight: 300;
+
+}
+
 //raleway fonts;
 @mixin ralereg (){
     font-family: $ff1;
